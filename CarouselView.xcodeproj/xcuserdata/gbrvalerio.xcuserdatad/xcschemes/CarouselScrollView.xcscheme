@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BEEF823D1EEEC92C004637E9"
-               BuildableName = "CarouselScrollView.framework"
-               BlueprintName = "CarouselScrollView"
-               ReferencedContainer = "container:CarouselScrollView.xcodeproj">
+               BuildableName = "CarouselView.framework"
+               BlueprintName = "CarouselView"
+               ReferencedContainer = "container:CarouselView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BEEF823D1EEEC92C004637E9"
-            BuildableName = "CarouselScrollView.framework"
-            BlueprintName = "CarouselScrollView"
-            ReferencedContainer = "container:CarouselScrollView.xcodeproj">
+            BuildableName = "CarouselView.framework"
+            BlueprintName = "CarouselView"
+            ReferencedContainer = "container:CarouselView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BEEF823D1EEEC92C004637E9"
-            BuildableName = "CarouselScrollView.framework"
-            BlueprintName = "CarouselScrollView"
-            ReferencedContainer = "container:CarouselScrollView.xcodeproj">
+            BuildableName = "CarouselView.framework"
+            BlueprintName = "CarouselView"
+            ReferencedContainer = "container:CarouselView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
