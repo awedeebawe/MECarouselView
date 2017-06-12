@@ -19,8 +19,6 @@ public class MECarouselView: UIView {
     //MARK: - Properties
     private(set) var standardItemScale:CGFloat = 0.8
     private(set) var standardItemWidthMultiplier:CGFloat = 1.0
-    private(set) var standardTopInset:CGFloat = .leastNonzeroMagnitude
-    private(set) var standardBottomInset:CGFloat = .leastNonzeroMagnitude
     private(set) var sideInset:CGFloat = 0.0
     private(set) var numberOfViews:Int = 0
     
@@ -77,11 +75,9 @@ public class MECarouselView: UIView {
     private func setupScrollView(){
         standardItemWidthMultiplier = dataSource?.standardItemWidthMultiplierInMECarouselView(self) ?? 1.0
         standardItemScale = dataSource?.standardItemScaleInMECarouselView?(self) ?? 0.8
-        standardTopInset = dataSource?.standardTopInsetInMECarouselView?(self) ?? .leastNonzeroMagnitude
-        standardBottomInset = dataSource?.standardBottomInsetInMECarouselView?(self) ?? .leastNonzeroMagnitude
         
         sideInset = (scrollView.bounds.size.width * (1.0 - standardItemWidthMultiplier)) / 2
-        scrollView.contentInset = UIEdgeInsetsMake(standardTopInset, sideInset, standardBottomInset, sideInset)
+        scrollView.contentInset = UIEdgeInsetsMake(.leastNonzeroMagnitude, sideInset, .leastNonzeroMagnitude, sideInset)
         
         scrollView.isScrollEnabled = dataSource?.isScrollAvaliableInMECarouselView?(self) ?? true
         
