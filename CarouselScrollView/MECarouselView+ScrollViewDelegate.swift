@@ -9,7 +9,7 @@
 
 import UIKit
 
-extension CarouselView : UIScrollViewDelegate {
+extension MECarouselView : UIScrollViewDelegate {
     
     private func visibleViews() -> [UIView] {
         var visibleRect = CGRect(origin: scrollView.contentOffset, size: scrollView.bounds.size)

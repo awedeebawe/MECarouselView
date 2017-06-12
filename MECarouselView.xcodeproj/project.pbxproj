@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		BEEF82431EEEC92C004637E9 /* CarouselScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF82411EEEC92C004637E9 /* CarouselScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEEF824E1EEECAA9004637E9 /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEF824D1EEECAA9004637E9 /* CarouselView.xib */; };
-		BEEF82501EEECC65004637E9 /* CarouselViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF824F1EEECC65004637E9 /* CarouselViewDelegate.swift */; };
-		BEEF82531EEED2C7004637E9 /* CarouselViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF82511EEECC8F004637E9 /* CarouselViewDataSource.swift */; };
-		BEEF827E1EEED58D004637E9 /* CarouselView+ScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF827D1EEED58D004637E9 /* CarouselView+ScrollViewDelegate.swift */; };
-		BEEF82801EEED5B9004637E9 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF827F1EEED5B9004637E9 /* CarouselView.swift */; };
+		BEEF824E1EEECAA9004637E9 /* MECarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEF824D1EEECAA9004637E9 /* MECarouselView.xib */; };
+		BEEF82501EEECC65004637E9 /* MECarouselViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF824F1EEECC65004637E9 /* MECarouselViewDelegate.swift */; };
+		BEEF82531EEED2C7004637E9 /* MECarouselViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF82511EEECC8F004637E9 /* MECarouselViewDataSource.swift */; };
+		BEEF827E1EEED58D004637E9 /* MECarouselView+ScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF827D1EEED58D004637E9 /* MECarouselView+ScrollViewDelegate.swift */; };
+		BEEF82801EEED5B9004637E9 /* MECarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF827F1EEED5B9004637E9 /* MECarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BEEF823E1EEEC92C004637E9 /* CarouselView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarouselView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEEF823E1EEEC92C004637E9 /* MECarouselView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MECarouselView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEF82411EEEC92C004637E9 /* CarouselScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarouselScrollView.h; sourceTree = "<group>"; };
 		BEEF82421EEEC92C004637E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEEF824D1EEECAA9004637E9 /* CarouselView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
-		BEEF824F1EEECC65004637E9 /* CarouselViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselViewDelegate.swift; sourceTree = "<group>"; };
-		BEEF82511EEECC8F004637E9 /* CarouselViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselViewDataSource.swift; sourceTree = "<group>"; };
-		BEEF827D1EEED58D004637E9 /* CarouselView+ScrollViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CarouselView+ScrollViewDelegate.swift"; sourceTree = "<group>"; };
-		BEEF827F1EEED5B9004637E9 /* CarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		BEEF824D1EEECAA9004637E9 /* MECarouselView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECarouselView.xib; sourceTree = "<group>"; };
+		BEEF824F1EEECC65004637E9 /* MECarouselViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MECarouselViewDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BEEF82511EEECC8F004637E9 /* MECarouselViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MECarouselViewDataSource.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BEEF827D1EEED58D004637E9 /* MECarouselView+ScrollViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "MECarouselView+ScrollViewDelegate.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BEEF827F1EEED5B9004637E9 /* MECarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MECarouselView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 		BEEF823F1EEEC92C004637E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BEEF823E1EEEC92C004637E9 /* CarouselView.framework */,
+				BEEF823E1EEEC92C004637E9 /* MECarouselView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,11 +58,11 @@
 			children = (
 				BEEF82411EEEC92C004637E9 /* CarouselScrollView.h */,
 				BEEF82421EEEC92C004637E9 /* Info.plist */,
-				BEEF824D1EEECAA9004637E9 /* CarouselView.xib */,
-				BEEF824F1EEECC65004637E9 /* CarouselViewDelegate.swift */,
-				BEEF82511EEECC8F004637E9 /* CarouselViewDataSource.swift */,
-				BEEF827D1EEED58D004637E9 /* CarouselView+ScrollViewDelegate.swift */,
-				BEEF827F1EEED5B9004637E9 /* CarouselView.swift */,
+				BEEF824D1EEECAA9004637E9 /* MECarouselView.xib */,
+				BEEF824F1EEECC65004637E9 /* MECarouselViewDelegate.swift */,
+				BEEF82511EEECC8F004637E9 /* MECarouselViewDataSource.swift */,
+				BEEF827D1EEED58D004637E9 /* MECarouselView+ScrollViewDelegate.swift */,
+				BEEF827F1EEED5B9004637E9 /* MECarouselView.swift */,
 			);
 			path = CarouselScrollView;
 			sourceTree = "<group>";
@@ -81,9 +81,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BEEF823D1EEEC92C004637E9 /* CarouselView */ = {
+		BEEF823D1EEEC92C004637E9 /* MECarouselView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEEF82461EEEC92C004637E9 /* Build configuration list for PBXNativeTarget "CarouselView" */;
+			buildConfigurationList = BEEF82461EEEC92C004637E9 /* Build configuration list for PBXNativeTarget "MECarouselView" */;
 			buildPhases = (
 				BEEF82391EEEC92C004637E9 /* Sources */,
 				BEEF823A1EEEC92C004637E9 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = CarouselView;
+			name = MECarouselView;
 			productName = CarouselScrollView;
-			productReference = BEEF823E1EEEC92C004637E9 /* CarouselView.framework */;
+			productReference = BEEF823E1EEEC92C004637E9 /* MECarouselView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BEEF82381EEEC92C004637E9 /* Build configuration list for PBXProject "CarouselView" */;
+			buildConfigurationList = BEEF82381EEEC92C004637E9 /* Build configuration list for PBXProject "MECarouselView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -128,7 +128,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BEEF823D1EEEC92C004637E9 /* CarouselView */,
+				BEEF823D1EEEC92C004637E9 /* MECarouselView */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEEF824E1EEECAA9004637E9 /* CarouselView.xib in Resources */,
+				BEEF824E1EEECAA9004637E9 /* MECarouselView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,10 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEEF82531EEED2C7004637E9 /* CarouselViewDataSource.swift in Sources */,
-				BEEF82501EEECC65004637E9 /* CarouselViewDelegate.swift in Sources */,
-				BEEF827E1EEED58D004637E9 /* CarouselView+ScrollViewDelegate.swift in Sources */,
-				BEEF82801EEED5B9004637E9 /* CarouselView.swift in Sources */,
+				BEEF82531EEED2C7004637E9 /* MECarouselViewDataSource.swift in Sources */,
+				BEEF82501EEECC65004637E9 /* MECarouselViewDelegate.swift in Sources */,
+				BEEF827E1EEED58D004637E9 /* MECarouselView+ScrollViewDelegate.swift in Sources */,
+				BEEF82801EEED5B9004637E9 /* MECarouselView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +306,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BEEF82381EEEC92C004637E9 /* Build configuration list for PBXProject "CarouselView" */ = {
+		BEEF82381EEEC92C004637E9 /* Build configuration list for PBXProject "MECarouselView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEEF82441EEEC92C004637E9 /* Debug */,
@@ -315,7 +315,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEEF82461EEEC92C004637E9 /* Build configuration list for PBXNativeTarget "CarouselView" */ = {
+		BEEF82461EEEC92C004637E9 /* Build configuration list for PBXNativeTarget "MECarouselView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEEF82471EEEC92C004637E9 /* Debug */,

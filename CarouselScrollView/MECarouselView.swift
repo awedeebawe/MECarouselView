@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class CarouselView: UIView {
+public class MECarouselView: UIView {
     
     //MARK: - IBOutlets
     @IBOutlet weak var contentView:UIView!
@@ -26,16 +26,16 @@ public class CarouselView: UIView {
     
     private(set) var actualIndex:Int = 0
     
-    public weak var dataSource:CarouselViewDataSource? {
+    public weak var dataSource:MECarouselViewDataSource? {
         didSet {
             guard dataSource != nil else { return }
             
             self.setupScrollView()
         }
     }
-    public weak var delegate:CarouselViewDelegate?
+    public weak var delegate:MECarouselViewDelegate?
     
-    private let nibName = "CarouselView"
+    private let nibName = "MECarouselView"
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -49,7 +49,7 @@ public class CarouselView: UIView {
     
     private func commonInit(){
         //Bundle.main.loadNibNamed(nibName, owner: self, options: nil)
-        Bundle(for: CarouselView.self).loadNibNamed(nibName, owner: self, options: nil)
+        Bundle(for: MECarouselView.self).loadNibNamed(nibName, owner: self, options: nil)
         
         contentView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(contentView)
@@ -75,15 +75,15 @@ public class CarouselView: UIView {
     }
     
     private func setupScrollView(){
-        standardItemWidthMultiplier = dataSource?.standardItemWidthMultiplierInCarouselView(self) ?? 1.0
-        standardItemScale = dataSource?.standardItemScaleInCarouselView?(self) ?? 0.8
-        standardTopInset = dataSource?.standardTopInsetInCarouselView?(self) ?? .leastNonzeroMagnitude
-        standardBottomInset = dataSource?.standardBottomInsetInCarouselView?(self) ?? .leastNonzeroMagnitude
+        standardItemWidthMultiplier = dataSource?.standardItemWidthMultiplierInMECarouselView(self) ?? 1.0
+        standardItemScale = dataSource?.standardItemScaleInMECarouselView?(self) ?? 0.8
+        standardTopInset = dataSource?.standardTopInsetInMECarouselView?(self) ?? .leastNonzeroMagnitude
+        standardBottomInset = dataSource?.standardBottomInsetInMECarouselView?(self) ?? .leastNonzeroMagnitude
         
         sideInset = (scrollView.bounds.size.width * (1.0 - standardItemWidthMultiplier)) / 2
         scrollView.contentInset = UIEdgeInsetsMake(standardTopInset, sideInset, standardBottomInset, sideInset)
         
-        scrollView.isScrollEnabled = dataSource?.isScrollAvaliableInCarouselView?(self) ?? true
+        scrollView.isScrollEnabled = dataSource?.isScrollAvaliableInMECarouselView?(self) ?? true
         
         insertViews()
     }
@@ -93,7 +93,7 @@ public class CarouselView: UIView {
             return
         }
         
-        numberOfViews = dataSource?.numberOfViewsInCarouselView(self) ?? 0
+        numberOfViews = dataSource?.numberOfViewsInMECarouselView(self) ?? 0
         
         for i in 0..<numberOfViews {
             let view = dataSource?.carouselView(self, viewForIndex: i)
