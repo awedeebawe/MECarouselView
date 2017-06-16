@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/massaentertainment/MECarouselView.git", :tag => "#{s.version}" }
 
   s.source_files  = "MECarouselView", "CarouselScrollView/*.{h,m,swift,xib}"
+  s.resources = "CarouselScrollView/*.xib"
 end
