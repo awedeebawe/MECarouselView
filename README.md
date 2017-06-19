@@ -18,7 +18,7 @@ This framework is a easy-to-use CarouselView focused on iOS UIKit-based applicat
 The ```MECarouselView``` is avaliable via CocoaPods.
 
 ```
-    pod 'MECarouselView'
+    pod 'MECarouselView', :git => 'https://github.com/massaentertainment/MECarouselView.git'
 ```
 
 ## How to use?
