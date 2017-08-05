@@ -65,7 +65,10 @@ public class MECarouselView: UIView {
             return
         }
         
-        let viewWidth = stackView.frame.width / CGFloat(numberOfViews)
+        let leftInset = dataSource?.scrollInsetsForMECarouselView?().left ?? 0.0
+        let rightInset = dataSource?.scrollInsetsForMECarouselView?().left ?? 0.0
+        
+        let viewWidth = stackView.frame.width / CGFloat(numberOfViews) - (leftInset + rightInset)
         let offsetX = viewWidth * CGFloat(index) - sideInset
         
         actualIndex = index

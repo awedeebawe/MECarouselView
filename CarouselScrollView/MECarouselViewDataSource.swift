@@ -15,5 +15,6 @@ import UIKit
     func standardItemWidthMultiplierInMECarouselView(_ carouselView:MECarouselView) -> CGFloat
     @objc optional func isScrollAvaliableInMECarouselView(_ carouselView:MECarouselView) -> Bool
     @objc optional func standardItemScaleInMECarouselView(_ carouselView:MECarouselView) -> CGFloat
+    @objc optional func scrollInsetsForMECarouselView() -> UIEdgeInsets
     
 }
