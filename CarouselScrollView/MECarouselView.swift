@@ -65,10 +65,7 @@ public class MECarouselView: UIView {
             return
         }
         
-        let leftInset = dataSource?.scrollInsetsForMECarouselView?().left ?? 0.0
-        let rightInset = dataSource?.scrollInsetsForMECarouselView?().left ?? 0.0
-        
-        let viewWidth = stackView.frame.width / CGFloat(numberOfViews) - (leftInset + rightInset)
+        let viewWidth = stackView.frame.width / CGFloat(numberOfViews)
         let offsetX = viewWidth * CGFloat(index) - sideInset
         
         actualIndex = index
@@ -98,9 +95,12 @@ public class MECarouselView: UIView {
         for i in 0..<numberOfViews {
             let view = dataSource?.carouselView(self, viewForIndex: i)
             
+            let leftInset = dataSource?.scrollInsetsForMECarouselView?().left ?? 0.0
+            let rightInset = dataSource?.scrollInsetsForMECarouselView?().left ?? 0.0
+            
             //let scrollLayoutGuide = stackView.layoutMarginsGuide
             //view?.widthAnchor.constraint(equalTo: scrollLayoutGuide.widthAnchor, multiplier: standardItemScale).isActive = true
-            view?.widthAnchor.constraint(equalToConstant: scrollView.frame.size.width * standardItemWidthMultiplier).isActive = true
+            view?.widthAnchor.constraint(equalToConstant: (scrollView.frame.size.width * standardItemWidthMultiplier) - leftInset - rightInset).isActive = true
             stackView.addArrangedSubview(view!)
         }
     }
