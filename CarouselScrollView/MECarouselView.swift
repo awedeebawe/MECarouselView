@@ -57,6 +57,7 @@ public class MECarouselView: UIView {
         contentView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         
         scrollView.delegate = self
+        scrollView.isPagingEnabled = true
     }
     
     public func snapToView(at index:Int){
