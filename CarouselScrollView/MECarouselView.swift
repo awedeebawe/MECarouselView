@@ -22,7 +22,7 @@ public class MECarouselView: UIView {
     private(set) var sideInset:CGFloat = 0.0
     private(set) var numberOfViews:Int = 0
     
-    private(set) var actualIndex:Int = 0
+    var actualIndex:Int = 0
     
     public weak var dataSource:MECarouselViewDataSource? {
         didSet {

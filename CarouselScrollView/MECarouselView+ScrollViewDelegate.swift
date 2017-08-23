@@ -32,6 +32,8 @@ extension MECarouselView : UIScrollViewDelegate {
         let scrollCenter = scrollView.frame.size.width / 2
         let offset = scrollView.contentOffset.x
         
+        actualIndex = Int(scrollView.contentOffset.x / scrollView.bounds.width)
+        
         let visibleViews = self.visibleViews()
         for view in visibleViews {
             let normalizedCenter = view.center.x - offset
