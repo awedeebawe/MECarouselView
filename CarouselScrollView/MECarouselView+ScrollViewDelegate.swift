@@ -50,4 +50,7 @@ extension MECarouselView : UIScrollViewDelegate {
         self.delegate?.carouselView?(self, DidSnapTo: actualIndex)
     }
     
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        self.delegate?.carouselView?(self, DidSnapTo: actualIndex)
+    }
 }
